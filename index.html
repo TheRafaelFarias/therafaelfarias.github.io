@@ -1,15 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Specialized in React, React Native and NodeJS, I can create
+    applications from scratch using JS/TS with readable, optimized, fast
+    codes and with lots of love and care"
+    />
+    <title>
+      Rafael Farias | Fullstack Developer | Your ideas giving you money
+    </title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Farias | Fullstack Developer | Your ideas giving you money</title>
-</head>
+    <link
+      rel="preload"
+      href="./styles.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./styles.css" /></noscript>
 
-<body>
-    <h1>Hello World</h1>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
 
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
+        rel="preload"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+      />
+    </noscript>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Poppins:wght@800&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+  </head>
+
+  <body>
+    <div class="main-content">
+      <div class="navbar" id="navbar">
+        <button
+          class="navbar-menu-icon"
+          onclick="toggleNavbarState()"
+          aria-label="Open navigation menu buttons"
+        >
+          <img src="./assets/menu-icon.svg" alt="" />
+        </button>
+        <p class="left-navbar-content">your ideas giving you money</p>
+        <div class="right-navbar-content">
+          <a href="#" class="navbar-button">home</a>
+          <a href="#about-me-section" class="navbar-button">about</a>
+          <a href="#projects-section" class="navbar-button">projects</a>
+        </div>
+      </div>
+
+      <div class="main-text">
+        <h2>
+          <strong>HEY</strong>, WELCOME TO THE PLACE WHERE
+          <strong>YOUR IDEA</strong> BECOMES REALITY
+        </h2>
+        <h1>
+          <strong>HEY</strong>, WELCOME TO THE PLACE WHERE
+          <strong>YOUR IDEA</strong> BECOMES REALITY
+        </h1>
+        <h2>
+          <strong>HEY</strong>, WELCOME TO THE PLACE WHERE
+          <strong>YOUR IDEA</strong> BECOMES REALITY
+        </h2>
+      </div>
+
+      <div class="who-i-am">
+        <h3>I'm <strong>Rafael Farias</strong></h3>
+        <div class="pill-container">
+          <div class="pill"></div>
+          <div class="pill pill-2"></div>
+          <div class="pill pill-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="about-me-section">
+      <h2 class="section-title">ABOUT</h2>
+      <div class="about-me">
+        <img
+          src="./assets/me.webp"
+          alt="A photo of me sitting on my chair with a monitor display code behind me"
+        />
+        <p>
+          <!-- Hello my name is Rafael Farias and I'm a Brazilian developer who works using the JS/TS stack. Already created a bunch of projects with the  -->
+          I'm a Brazilian developer born on the 30th of December who has always
+          loved creating things. At the age of 11, I discovered programming
+          through the Minecraft game and over time I started configuring servers
+          and then creating plugins for these servers until I discovered web
+          development.
+          <br /><br />
+          I went deeper and deeper learning Javascript and stumbled into the
+          world of NodeJS, thus being able to create fullstack applications. I
+          also developed bots for Discord and after that I became a master in
+          Javascript for Web and NodeJS applications.
+          <br /><br />
+          Specialized in React, React Native and NodeJS, today I can create
+          applications from scratch using JS/TS with readable, optimized, fast
+          codes and with lots of love and care
+        </p>
+      </div>
+    </div>
+
+    <div class="section" id="projects-section">
+      <h2 class="section-title">PROJECTS</h2>
+
+      <div class="projects-section">
+        <div class="project-container">
+          <div class="project-preview">
+            <p class="project-counter">01</p>
+            <img src="./assets/projects/reyou.webp" alt="" />
+
+            <div class="project-visit-call">
+              <a href="https://www.reyoushop.com.br/"
+                >Visit <img src="./assets/arrow-icon.svg" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <h3>Reyou Shop</h3>
+            <p>
+              Reyou is a Brazilian e-commerce with ecological products from
+              several websites. I participated in this project creating pages,
+              solving problems that made the website unusable and optimizing
+              requests for the API
+            </p>
+          </div>
+        </div>
+
+        <div class="project-container project-container-right">
+          <div class="project-preview">
+            <p class="project-counter">02</p>
+            <img src="./assets/projects/ecoleta.webp" alt="" />
+
+            <div class="project-visit-call">
+              <a
+                href="https://github.com/therafaelfarias/ecoleta"
+                target="_blank"
+                >Visit <img src="./assets/arrow-icon.svg" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <h3>Ecoleta</h3>
+            <p>
+              Ecoleta is a waste marketplace to recycle your trash, created
+              during a online event. A fullstack app with web, mobile and server
+              all created using React, React Native and NodeJS
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-name-container">
+        <h1>Rafael Farias</h1>
+        <p>Your ideias giving you money</p>
+      </div>
+      <div class="footer-contact-container">
+        <h2>Contact</h2>
+        <div class="contacts-container">
+          <a class="contact-container" href="emailto:rafaelfarias@zohomail.com">
+            <p>Email</p>
+            <svg
+              width="36"
+              height="25"
+              viewBox="0 0 36 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M35.3184 8.25521C35.5925 8.05339 36 8.24219 36 8.5612V21.875C36 23.6003 34.4893 25 32.6271 25H3.39547C1.53335 25 0.022583 23.6003 0.022583 21.875V8.56771C0.022583 8.24219 0.423113 8.0599 0.704187 8.26172C2.2782 9.39453 4.36517 10.8333 11.5326 15.6576C13.0152 16.6602 15.5168 18.7695 18.0113 18.7565C20.5199 18.776 23.0706 16.6211 24.4971 15.6576C31.6645 10.8333 33.7444 9.38802 35.3184 8.25521ZM18.0113 16.6667C19.6415 16.6927 21.9885 14.7656 23.169 13.9714C32.4936 7.70182 33.2033 7.15495 35.3536 5.59245C35.7611 5.29948 36 4.84375 36 4.36198V3.125C36 1.39974 34.4893 0 32.6271 0H3.39547C1.53335 0 0.022583 1.39974 0.022583 3.125V4.36198C0.022583 4.84375 0.261496 5.29297 0.669053 5.59245C2.81927 7.14844 3.52898 7.70182 12.8536 13.9714C14.0341 14.7656 16.3811 16.6927 18.0113 16.6667Z"
+              />
+            </svg>
+          </a>
+
+          <button
+            class="contact-container"
+            onpointerdown="copyToClipboard('Rafael Farias#5619')"
+            onclick="copyToClipboard('Rafael Farias#5619')"
+          >
+            <p>Discord</p>
+            <svg
+              width="33"
+              height="38"
+              viewBox="0 0 33 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.8931 17.9143C21.8931 19.0646 21.0446 20.0074 19.9697 20.0074C18.9137 20.0074 18.0463 19.0646 18.0463 17.9143C18.0463 16.764 18.8949 15.8211 19.9697 15.8211C21.0446 15.8211 21.8931 16.764 21.8931 17.9143ZM13.0869 15.8211C12.012 15.8211 11.1634 16.764 11.1634 17.9143C11.1634 19.0646 12.0309 20.0074 13.0869 20.0074C14.1617 20.0074 15.0103 19.0646 15.0103 17.9143C15.0291 16.764 14.1617 15.8211 13.0869 15.8211ZM33 3.88457V37.7143C28.2493 33.5161 29.7687 34.9058 24.2503 29.7754L25.2497 33.264H3.86571C1.73486 33.264 0 31.5291 0 29.3794V3.88457C0 1.73486 1.73486 0 3.86571 0H29.1343C31.2651 0 33 1.73486 33 3.88457ZM27.6257 21.7611C27.6257 15.6891 24.9103 10.7674 24.9103 10.7674C22.1949 8.73086 19.6114 8.78743 19.6114 8.78743L19.3474 9.08914C22.5531 10.0697 24.0429 11.484 24.0429 11.484C19.5635 9.02896 14.3017 9.02852 9.95657 10.9371C9.25886 11.2577 8.844 11.484 8.844 11.484C8.844 11.484 10.4091 9.99429 13.8034 9.01371L13.6149 8.78743C13.6149 8.78743 11.0314 8.73086 8.316 10.7674C8.316 10.7674 5.60057 15.6891 5.60057 21.7611C5.60057 21.7611 7.18457 24.4954 11.352 24.6274C11.352 24.6274 12.0497 23.7789 12.6154 23.0623C10.2206 22.3457 9.31543 20.8371 9.31543 20.8371C9.59283 21.0313 10.0503 21.283 10.0886 21.3086C13.2715 23.091 17.7926 23.675 21.8554 21.9686C22.5154 21.7234 23.2509 21.3651 24.024 20.856C24.024 20.856 23.0811 22.4023 20.6109 23.1C21.1766 23.8166 21.8554 24.6274 21.8554 24.6274C26.0229 24.4954 27.6257 21.7611 27.6257 21.7611Z"
+              />
+            </svg>
+          </button>
+
+          <a
+            class="contact-container"
+            href="https://www.linkedin.com/in/rafael-farias-a9b82a1bb/"
+          >
+            <p>Linkedin</p>
+            <svg
+              width="33"
+              height="33"
+              viewBox="0 0 33 33"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.6429 0H2.34978C1.05335 0 0 1.06808 0 2.37924V30.6208C0 31.9319 1.05335 33 2.34978 33H30.6429C31.9393 33 33 31.9319 33 30.6208V2.37924C33 1.06808 31.9393 0 30.6429 0ZM9.97366 28.2857H5.08259V12.5371H9.98103V28.2857H9.97366ZM7.52812 10.3862C5.95915 10.3862 4.69219 9.11183 4.69219 7.55022C4.69219 5.98862 5.95915 4.71429 7.52812 4.71429C9.08973 4.71429 10.3641 5.98862 10.3641 7.55022C10.3641 9.1192 9.0971 10.3862 7.52812 10.3862ZM28.3078 28.2857H23.4167V20.625C23.4167 18.7982 23.3799 16.4484 20.8754 16.4484C18.3268 16.4484 17.9364 18.4373 17.9364 20.4924V28.2857H13.0453V12.5371H17.7375V14.6879H17.8038C18.4594 13.4504 20.0578 12.1467 22.4371 12.1467C27.3871 12.1467 28.3078 15.4098 28.3078 19.6527V28.2857Z"
+              />
+            </svg>
+          </a>
+
+          <a
+            class="contact-container"
+            href="htts://twitter.com/therafaelfarias"
+          >
+            <p>Twitter</p>
+            <svg
+              width="34"
+              height="33"
+              viewBox="0 0 34 33"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.4148 0H4.12362C2.14431 0 0.538452 1.58371 0.538452 3.53571V29.4643C0.538452 31.4163 2.14431 33 4.12362 33H30.4148C32.3941 33 34 31.4163 34 29.4643V3.53571C34 1.58371 32.3941 0 30.4148 0ZM26.7624 11.6973C26.7774 11.9036 26.7774 12.1172 26.7774 12.3234C26.7774 18.7098 21.8478 26.0685 12.84 26.0685C10.0615 26.0685 7.48471 25.273 5.31867 23.9029C5.71453 23.9471 6.09546 23.9618 6.49879 23.9618C8.7918 23.9618 10.8981 23.1958 12.5786 21.8993C10.4275 21.8551 8.62001 20.4629 8.00008 18.5478C8.75446 18.6583 9.43414 18.6583 10.2109 18.4594C7.9702 18.01 6.28965 16.0654 6.28965 13.7156V13.6567C6.93947 14.0176 7.70131 14.2386 8.50051 14.2681C7.82861 13.8273 7.2778 13.2294 6.89724 12.5276C6.51668 11.8258 6.31821 11.042 6.31953 10.2462C6.31953 9.34755 6.55854 8.52254 6.98428 7.80804C9.3968 10.7397 13.0193 12.6549 17.0825 12.8612C16.3879 9.58326 18.8751 6.92411 21.8627 6.92411C23.2744 6.92411 24.5441 7.50603 25.4404 8.44888C26.5458 8.24263 27.6064 7.8375 28.5476 7.28504C28.1816 8.40469 27.4123 9.34754 26.3965 9.9442C27.3824 9.84107 28.3384 9.56853 29.2198 9.19286C28.555 10.1578 27.7185 11.0123 26.7624 11.6973Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="background-svg">
+      <img
+        src="./assets/Background SVGS.svg"
+        alt=""
+        aria-hidden="true"
+        draggable="false"
+      />
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
